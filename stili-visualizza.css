@@ -1,0 +1,101 @@
+body{
+    background-color: #333;
+}
+nav {
+    background-color: #ffbf00;
+    color: #fff;
+    padding: 10px 40px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    color: #333;
+    text-decoration: none;
+    font-family: 'Arial Black', Gadget, sans-serif;
+    font-size: 30px;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-family: 'Arial Black', Gadget, sans-serif;
+}
+
+nav ul li a:hover {
+    color: #333;
+    text-decoration: none;
+    font-family: 'Arial Black', Gadget, sans-serif;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    background-color: #ffbf00;
+    padding: 10px;
+    z-index: 1;
+    overflow-y: auto; 
+    max-height: 200px; 
+}    
+
+nav ul li:hover > ul {
+    display: block;
+    max-height: 200px;
+}
+
+nav ul ul li {
+    display: block;
+    margin-top: 5px;
+}
+
+table {
+    width: 50%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+th {
+    background-color: #FFA500;
+    color: black;
+    font-family: 'Arial Black', Gadget, sans-serif;
+}
+
+tr{
+    background-color: #ffbf00;
+    font-style: italic;
+    font-size: 20px;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+td {
+    border-bottom: 1px solid black;
+}
+
+h1{
+    font-family: 'Arial Black', Gadget, sans-serif;
+    font-size: 50px;
+    text-align: center;
+    color: #ffbf00;
+}
+
+nav ul li:not(:last-child) a:after {         
+    content: "|"; 
+    margin-right: 15px;
+    margin-left: 15px;
+}

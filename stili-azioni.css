@@ -1,0 +1,109 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #333;
+    color: #333;
+    padding: 20px;
+}
+
+nav {
+    background-color: #ffbf00;
+    color: #fff;
+    padding: 10px 40px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    color: #333;
+    text-decoration: none;
+    font-family: 'Arial Black', Gadget, sans-serif;
+    font-size: 30px;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-family: 'Arial Black', Gadget, sans-serif;
+}
+
+nav ul li a:hover {
+    color: #333;
+    text-decoration: none;
+    font-family: 'Arial Black', Gadget, sans-serif;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    background-color: #ffbf00;
+    padding: 10px;
+    z-index: 1;
+    overflow-y: auto; 
+    max-height: 200px; 
+}    
+
+nav ul li:hover > ul {
+    display: block;
+    max-height: 200px;
+}
+
+nav ul ul li {
+    display: block;
+    margin-top: 5px;
+}
+
+nav ul li:not(:last-child) a:after {         
+    content: "|"; 
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+h1 {
+    color: #ffbf00;
+    text-align: center;
+}
+
+form {
+    background-color: #ffbf00;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h3 {
+    color: black;
+    margin-bottom: 5px;
+}
+
+input[type="number"],
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box; 
+    font-family: 'Arial Black', Gadget, sans-serif;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #FFA500;
+    color: black;
+    border: 1px, black;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Arial Black', Gadget, sans-serif;
+}
+
+input[type="submit"]:hover {
+    background-color: #FFFACD;
+}

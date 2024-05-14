@@ -1,0 +1,147 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #FFFFF0;
+}
+.wrapper {
+    width: 800px;
+    height: 600px;
+    position: relative;
+    margin: 3% auto;
+    overflow: hidden;
+}
+
+.login-text {
+    width: 800px;
+    height:450px;
+    background-color: #FFBF00;     
+    position: absolute;
+    top: -300px;
+    box-sizing: border-box;
+    padding: 6%;
+    transition: all 0.5s ease-in-out;
+    z-index: 11;
+}
+
+.text {
+    margin-left: 20px;
+    color: black;
+    display: none;
+    transition: all 0.5s ease-in-out;
+    transition-delay: 0.3s;
+
+    a, a:visited {
+        font-size: 36px;
+        color: #2F2F2F;
+        text-decoration: none;  
+        font-weight: bold;
+        display: block;
+    }
+
+    hr {
+        width: 10%;
+        float: left;
+        background-color: #fff;
+        font-size: 16px;
+    }
+
+    input {
+        margin-top: 30px;
+        height: 40px;
+        width: 300px;
+        border-radius: 2px;
+        border: none;
+        background-color: #444;
+        opacity: 0.6;
+        outline: none;
+        color: #fff;
+        padding-left: 10px;
+    }
+
+    input[type=text] {
+        margin-top: 60px;
+    }
+
+    button {
+        margin-top: 60px;
+        height: 40px;
+        width: 140px;
+        outline: none;
+    }
+
+    .login-btn {
+        background: #444;
+        border: none;
+        border-radius: 2px;
+        color: #FFFFF0;
+    }
+}
+
+.cta {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #FFFFF0;
+    position: absolute;
+    bottom: -30px;
+    left: 370px;
+    color: black;
+    outline: none;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.call-text {
+    background-color: #2F2F2F;
+    width: 800px;
+    height: 450px;
+    position: absolute;
+    bottom: 0;
+    padding: 10%;
+    box-sizing: border-box;
+    text-align: center;
+
+    h1 {
+        font-size: 42px;
+        margin-top: 10%;
+        color: white;
+
+        span {
+            color: #FFBF00;
+            font-weight: bolder;
+            
+        }
+    }
+
+    a, a:visited {
+        font-size: 20px;
+        color: #2F2F2F;
+        text-decoration: none;  
+        font-weight: bold;
+        display: block;
+    }
+
+    button {
+        height: 40px;
+        width: 180px;
+        border: none;
+        border-radius: 20px;
+        background-color:#FFBF00; 
+        color: black;
+        font-weight: bolder;
+        margin-top: 30px;
+        cursor: pointer;
+        outline: none;
+    }
+}
+
+.show-hide {
+    display: block;
+}
+
+.expand {
+    transform: translateY(300px);
+}
+
+.title{
+    color: black;
+}

@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+.testo-galleria {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: rgb(231, 226, 219);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.testo-galleria h1 {
+    color: #333;
+    text-align: center;
+}
+
+.testo-galleria p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.testo-galleria p:first-child {
+    margin-top: 0;
+}
+
+.testo-galleria p:last-child {
+    margin-bottom: 0;
+}
+
+.testo-galleria p:last-child::after {
+    content: "";
+    display: block;
+    height: 20px; /* Aggiunge spazio alla fine del testo */
+}
+
+h2 {
+    text-align: center;
+    margin-top: 30px;
+    color: rgb(231, 226, 219);
+}
+
+h2 a {
+    color: #ffbf00;
+    text-decoration: none;
+}
+
+h2 a:hover {
+    text-decoration: underline;
+}
+
+.immagini-container {
+    display: flex;
+    justify-content: space-between; /* Distribuisce uniformemente lo spazio tra gli elementi */
+    align-items: center; /* Allinea verticalmente gli elementi */
+    margin-top: 30px;
+}
+
+.img1, .img2 {
+    width: 25%; /* Imposta la larghezza delle immagini */
+    border-radius: 10px;
+    transition: transform 0.3s ease; /* Aggiunge una transizione per l'effetto hover */
+}
+
+.img1:hover, .img2:hover {
+    transform: scale(1.05); /* Ingrandisce leggermente le immagini al passaggio del mouse */
+}
+
+h1{
+    font-family: 'Arial Black', Gadget, sans-serif;
+    font-size: 50px;
+    text-align: center;
+    color: #ffbf00;
+}
